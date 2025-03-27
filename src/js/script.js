@@ -77,7 +77,7 @@ const addProductToUI = (product) => {
       </div>
     `;
 };
-
+// lOADLED
 document.addEventListener("DOMContentLoaded", async () => {
   const productList = await getProducts();
   let productListGroup = [];
