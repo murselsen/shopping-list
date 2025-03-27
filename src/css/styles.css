@@ -12,20 +12,80 @@ header {
   font-size: 24px;
 }
 
-.products,
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  gap: 20px;
+  padding: 50px 250px;
+}
+
 .cart {
   margin: 20px;
   padding: 20px;
   border: 1px solid #ddd;
   display: inline-block;
-  width: 300px;
+  width: 500px;
+  height: max-content;
   vertical-align: top;
 }
 
-.product {
+.products {
+  width: 1000px;
+}
+
+.products .product-group {
+  border: 1px solid #ddd;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
   margin-bottom: 20px;
-  padding: 10px;
+}
+
+.products .product-group .product-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 20px;
   border: 1px solid #ccc;
+  width: 48.9%;
+  text-align: left;
+}
+
+.product .product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product .product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  margin-right: 20px;
 }
 
 button {
